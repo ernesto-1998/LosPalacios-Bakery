@@ -4,12 +4,17 @@
       <base-icon :icon-name="'logo'" :size="48" />
       <span>Los Palacios</span>
     </div>
-    <nav>
-      <ul class="nav-list">
-        <li><a href="#" class="nav-list_link">Nosotros</a></li>
-        <li><a href="#" class="nav-list_link">Productos</a></li>
-        <li><a href="#" class="nav-list_link">Contacto</a></li>
-      </ul>
+    <input type="checkbox" name="" id="check" />
+    <label for="check" class="icons">
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <i class="bx bx-x" id="close-icon"></i>
+    </label>
+
+    <nav class="nav-list" id="nav-list">
+      <a href="#" class="nav-list_link">Inicio</a>
+      <a href="#" class="nav-list_link">Nosotros</a>
+      <a href="#" class="nav-list_link">Productos</a>
+      <a href="#" class="nav-list_link">Contacto</a>
     </nav>
   </header>
 </template>
@@ -48,10 +53,21 @@ header {
   transform: rotate(-4deg);
 }
 
+.icons {
+  display: none;
+  font-size: 2.8rem;
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
 .nav-list {
   display: flex;
   gap: 1.7rem;
   font-family: var(--nav-font-family);
+  font-size: 1.15rem;
   font-optical-sizing: auto;
   font-weight: 700;
 }
@@ -60,22 +76,75 @@ header {
   position: relative;
 }
 
-.nav-list_link::after {
-  content: '';
-  position: absolute;
-  bottom: -0.8rem;
-  left: 0;
-  width: 0;
-  height: 0.2rem;
-  background-color: var(--extra-color);
-  transition: width 0.3s ease;
+@media (width < 992px) {
+  header {
+    padding: 1.2rem 3rem;
+  }
 }
 
-.nav-list_link:hover {
-  color: var(--third-color);
+@media (width > 769px) {
+  .nav-list_link::after {
+    content: '';
+    position: absolute;
+    bottom: -0.8rem;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background-color: var(--extra-color);
+    transition: width 0.3s ease;
+  }
+
+  .nav-list_link:hover {
+    color: var(--third-color);
+  }
+
+  .nav-list_link:hover::after {
+    width: 100%;
+  }
 }
 
-.nav-list_link:hover::after {
-  width: 100%;
+@media (width <= 768px) {
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .nav-list {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 0;
+    background-color: var(--main-color);
+    flex-direction: column;
+    gap: 1rem;
+    overflow: hidden;
+    transition: 0.5s ease;
+  }
+
+  #check:checked ~ .nav-list {
+    height: 11rem;
+  }
+
+  .nav-list_link {
+    text-align: center;
+  }
+}
+
+@media (width < 480px) {
+  header {
+    padding: 1.2rem 1rem;
+  }
 }
 </style>

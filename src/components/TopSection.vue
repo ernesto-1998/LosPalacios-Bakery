@@ -9,7 +9,7 @@ import ListSocialIcons from './ListSocialIcons.vue'
 
 import type { IIcon } from '@/interfaces/IIcon'
 
-const ICON_SIZE = 28
+const ICON_SIZE = 24
 const ICON_COLOR = 'white'
 
 const iconsObject: Array<IIcon> = [
@@ -40,6 +40,6 @@ const iconsObject: Array<IIcon> = [
   align-items: center;
   justify-content: flex-end;
   background-color: var(--third-color);
-  padding: 0.5rem 1.5rem;
+  padding: 0.3rem 1.5rem;
 }
 </style>
