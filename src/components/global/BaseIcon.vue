@@ -5,7 +5,7 @@
 <script setup lang="ts">
 import { computed, type Component } from 'vue'
 
-import { store } from './icon.store'
+import { store } from '@/components/icons/icon.store'
 
 const props = defineProps({
   iconName: {

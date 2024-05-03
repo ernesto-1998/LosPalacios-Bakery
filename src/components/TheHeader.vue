@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="logo">
-      <base-icon :icon-name="'logo'" :size="48" />
+      <BaseIcon :icon-name="'logo'" :size="48" />
       <span>Los Palacios</span>
     </div>
     <input type="checkbox" name="" id="check" />
@@ -20,7 +20,7 @@
 </template>
 
 <script setup lang="ts">
-import BaseIcon from '@/components/icons/BaseIcon.vue'
+import BaseIcon from '@/components/global/BaseIcon.vue'
 </script>
 
 <style scoped>
@@ -66,7 +66,7 @@ header {
 .nav-list {
   display: flex;
   gap: 1.7rem;
-  font-family: var(--nav-font-family);
+  font-family: var(--text-font-family);
   font-size: 1.15rem;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -76,7 +76,7 @@ header {
   position: relative;
 }
 
-@media (width < 992px) {
+@media (width < 1024px) {
   header {
     padding: 1.2rem 3rem;
   }
@@ -142,7 +142,7 @@ header {
   }
 }
 
-@media (width < 480px) {
+@media (width < 640px) {
   header {
     padding: 1.2rem 1rem;
   }

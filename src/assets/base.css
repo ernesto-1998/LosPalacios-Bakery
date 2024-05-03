@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Briem+Hand:wght@100..900&family=Heebo:wght@100..900&family=Pacifico&display=swap');
 
 :root {
   /* https://colorhunt.co/palette/6b240c994d1ce48f45f5cca0 */
@@ -12,8 +12,19 @@
   --main-border-radius: 16px;
 
   --logo-font-family: 'Pacifico', cursive;
-  --nav-font-family: 'Heebo', sans-serif;
+  --text-font-family: 'Heebo', sans-serif;
+  --title-font-family: 'Briem Hand', cursive;
 }
+
+/* Breakpoints */
+
+/* 
+sm	640px	@media (min-width: 640px) 
+md	768px	@media (min-width: 768px) 
+lg	1024px	@media (min-width: 1024px) 
+xl	1280px	@media (min-width: 1280px) 
+2xl	1536px 
+*/
 
 *,
 *::before,

@@ -1,11 +1,11 @@
 <template>
   <div class="top-container">
-    <list-social-icons :icons="iconsObject" />
+    <ListSocialIcons :icons="iconsObject" />
   </div>
 </template>
 
 <script setup lang="ts">
-import ListSocialIcons from './ListSocialIcons.vue'
+import ListSocialIcons from '@/components/widgets/ListSocialIcons.vue'
 
 import type { IIcon } from '@/interfaces/IIcon'
 

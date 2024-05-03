@@ -5,11 +5,7 @@ import InstagramIcon from './social/InstagramIcon.vue'
 import FacebookIcon from './social/FacebookIcon.vue'
 import TwitterIcon from './social/TwitterIcon.vue'
 
-interface IStore {
-  [key: string]: Component
-}
-
-export const store: IStore = {
+export const store: Record<string, Component> = {
   logo: LogoIcon,
   instagram: InstagramIcon,
   facebook: FacebookIcon,
