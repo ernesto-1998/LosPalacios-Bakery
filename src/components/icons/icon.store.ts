@@ -5,9 +5,12 @@ import InstagramIcon from './social/InstagramIcon.vue'
 import FacebookIcon from './social/FacebookIcon.vue'
 import TwitterIcon from './social/TwitterIcon.vue'
 
+import StarIcon from './StarIcon.vue'
+
 export const store: Record<string, Component> = {
   logo: LogoIcon,
   instagram: InstagramIcon,
   facebook: FacebookIcon,
-  twitter: TwitterIcon
+  twitter: TwitterIcon,
+  star: StarIcon
 }

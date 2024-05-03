@@ -1,11 +1,11 @@
 <template>
   <main>
-    <BannerCard />
+    <HomeView />
   </main>
 </template>
 
 <script setup lang="ts">
-import BannerCard from '@/components/BannerCard.vue'
+import HomeView from '@/views/HomeView.vue'
 </script>
 
 <style scoped></style>

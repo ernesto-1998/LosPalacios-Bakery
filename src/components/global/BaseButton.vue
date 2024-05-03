@@ -23,7 +23,7 @@ const buttonStyle = computed(() => {
 <style scoped>
 button {
   border-radius: var(--main-border-radius);
-  padding: 0.5rem 3rem;
+  padding: 0.4rem 3.2rem;
   font-family: var(--text-font-family);
   font-weight: 600;
   font-size: 1.2rem;

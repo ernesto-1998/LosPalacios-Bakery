@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Tres Leches",
+    "price": 3.5,
+    "score": 5,
+    "image": "https://alimentos.com.sv/wp-content/uploads/2020/09/39-tres-leches-porcion-scaled.jpg",
+    "category": "Pasteleria"
+  },
+  {
+    "name": "Cheesecake Fresa",
+    "price": 2.5,
+    "score": 4,
+    "image": "https://alimentos.com.sv/wp-content/uploads/2020/09/42-cheesecake-fresa-entero-scaled.jpg",
+    "category": "Pasteleria"
+  },
+  {
+    "name": "Croissant de jamón y queso",
+    "price": 3.0,
+    "score": 5,
+    "image": "https://cdn.chefclub.tools/uploads/recipes/cover-thumbnail/62d4963c-f02a-4440-b475-a7f0b6da45f8_iYR1tsW.jpg",
+    "category": "Cafetería"
+  }
+]

@@ -29,6 +29,7 @@ const BUTTON_KEYS: Record<string, string> = {
   grid-template-columns: 1fr 1fr;
   height: 480px;
   padding: 1rem 2rem;
+  overflow-y: auto;
 }
 
 .banner-card_wrapper {
@@ -36,5 +37,10 @@ const BUTTON_KEYS: Record<string, string> = {
   flex-direction: column;
   gap: 1.5rem;
 }
+
+@media (width < 1024px) {
+  .banner-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
-@/const/button-styles
