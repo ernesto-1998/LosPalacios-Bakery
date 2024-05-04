@@ -1,13 +1,15 @@
 <template>
   <section class="top-products_wrapper">
-    <BaseSubTitle :title="TITLE.toLocaleUpperCase()" :font-size="'3.5rem'" />
-    <ul class="cards-wrapper">
-      <li v-for="(product, index) in topProducts" :key="index">
-        <ProductCard :product="product" />
-      </li>
-    </ul>
-    <div class="button-wrapper">
-      <BaseButton :style="'btnAction'" :title="'Productos'" />
+    <BaseSubTitle :title="TITLE.toLocaleUpperCase()" />
+    <div class="top-products_body">
+      <ul class="cards-list">
+        <li v-for="(product, index) in topProducts" :key="index">
+          <ProductCard :product="product" />
+        </li>
+      </ul>
+      <div class="button-wrapper">
+        <BaseButton :style="'btnSecond'" :title="'Productos'" />
+      </div>
     </div>
   </section>
 </template>
@@ -35,12 +37,35 @@ const topProducts = computed<Array<IProduct>>(() => {
   flex-direction: column;
   align-items: center;
   margin-top: var(--mt);
+  padding: var(--px-section-lg);
 }
 
-.cards-wrapper {
+.top-products_body {
+  margin-top: var(--mt-section-body);
+}
+
+.cards-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  padding: 2rem;
   gap: 3rem;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.2rem;
+}
+
+@media (width > 640px) {
+  .top-products_wrapper {
+    padding: var(--px-section-md);
+  }
+}
+
+@media (width <= 640px) {
+  .top-products_wrapper {
+    padding: var(--px-section-sm);
+  }
 }
 </style>

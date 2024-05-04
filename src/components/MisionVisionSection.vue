@@ -1,6 +1,6 @@
 <template>
   <section class="mision-vision_wrapper">
-    <BaseSubTitle :title="TITLE.toLocaleUpperCase()" :font-size="'3.5rem'" />
+    <BaseSubTitle :title="TITLE.toLocaleUpperCase()" />
     <div class="mision-vision_body">
       <div class="icon-button_wrapper">
         <BaseIcon :icon-name="'hand'" :size="250" />
@@ -50,7 +50,7 @@ const VISION_MISION = {
 
 .mision-vision_body {
   display: grid;
-  margin-top: 3rem;
+  margin-top: var(--mt-section-body);
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
@@ -61,5 +61,17 @@ const VISION_MISION = {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+}
+
+@media (width > 640px) {
+  .mision-vision_wrapper {
+    padding: var(--px-section-md);
+  }
+}
+
+@media (width <= 640px) {
+  .mision-vision_wrapper {
+    padding: var(--px-section-sm);
+  }
 }
 </style>

@@ -6,16 +6,25 @@
   --card-color: rgb(153, 77, 28);
   --third-color: rgb(228, 143, 69);
   --extra-color: rgb(245, 204, 160);
+  --background-color: rgb(255, 234, 211);
 
   --text-color: rgb(255, 255, 255);
 
   --main-border-radius: 16px;
 
-  --mt: 5rem;
+  --mt: 5.5rem;
+  --mt-section-body: 4rem;
+
+  --px-section-sm: 0 1rem;
+  --px-section-md: 0 2rem;
+  --px-section-lg: 0 3rem;
 
   --logo-font-family: 'Pacifico', cursive;
   --text-font-family: 'Heebo', sans-serif;
   --title-font-family: 'Briem Hand', cursive;
+
+  --base-subtitle-size-lg: 4.5rem;
+  --base-subtitle-size-sm: 2.7rem;
 }
 
 /* Breakpoints */
@@ -39,4 +48,5 @@ xl	1280px	@media (min-width: 1280px)
 
 body {
   min-height: 100dvh;
+  background-color: var(--background-color);
 }

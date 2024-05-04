@@ -11,9 +11,3 @@ import TopProductsSection from '@/components/TopProductsSection.vue'
 import MisionVisionSection from '@/components/MisionVisionSection.vue'
 import CategoriesSection from '@/components/CategoriesSection.vue'
 </script>
-
-<style scoped>
-div {
-  height: 2500px;
-}
-</style>
