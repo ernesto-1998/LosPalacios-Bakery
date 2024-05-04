@@ -22,7 +22,6 @@ const buttonStyle = computed(() => {
 
 <style scoped>
 button {
-  border-radius: var(--main-border-radius);
   padding: 0.4rem 3.2rem;
   font-family: var(--text-font-family);
   font-weight: 600;
@@ -37,6 +36,12 @@ button:hover {
 
 .btnAction {
   background-color: var(--card-color);
+  border-radius: var(--main-border-radius);
+  border: none;
+}
+
+.btnSecond {
+  background-color: var(--third-color);
   border: none;
 }
 </style>

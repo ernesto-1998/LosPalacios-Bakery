@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Pasteleria",
+    "image": "/categories/pasteleria.jpg"
+  },
+  {
+    "title": "Panaderia",
+    "image": "/categories/panaderia.jpg"
+  },
+  {
+    "title": "Reposteria",
+    "image": "/categories/reposteria.jpg"
+  },
+  {
+    "title": "Cafeteria",
+    "image": "/categories/cafeteria.jpg"
+  },
+  {
+    "title": "Boquitas",
+    "image": "/categories/boquitas.jpg"
+  }
+]

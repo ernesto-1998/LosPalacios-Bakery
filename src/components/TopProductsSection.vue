@@ -34,7 +34,7 @@ const topProducts = computed<Array<IProduct>>(() => {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 4.5rem;
+  margin-top: var(--mt);
 }
 
 .cards-wrapper {
