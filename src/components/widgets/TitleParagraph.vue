@@ -20,6 +20,8 @@ const props = defineProps<IProps>()
   flex-direction: column;
   gap: 1rem;
   padding: 1rem;
+  max-height: 330px;
+  overflow-y: auto;
   background-color: var(--card-color);
   clip-path: polygon(50% 0%, 100% 9%, 100% 100%, 0 100%, 0 9%);
 }
