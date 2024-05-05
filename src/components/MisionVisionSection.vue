@@ -51,7 +51,7 @@ const VISION_MISION = {
 .mision-vision_body {
   display: grid;
   margin-top: var(--mt-section-body);
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 2rem;
 }
 

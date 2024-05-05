@@ -4,6 +4,7 @@
   /* max-width: 1920px; */
   max-width: 1300px;
   margin: 0 auto;
+  overflow-x: hidden;
   font-weight: normal;
   color: var(--text-color);
 }

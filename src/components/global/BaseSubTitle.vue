@@ -12,8 +12,9 @@ const props = defineProps<IProps>()
 
 <style scoped>
 .subtitle {
+  position: relative;
   font-family: var(--text-font-family);
-  font-weight: 900;
+  font-weight: 800;
   font-size: var(--base-subtitle-size-lg);
   color: var(--card-color);
   text-align: center;

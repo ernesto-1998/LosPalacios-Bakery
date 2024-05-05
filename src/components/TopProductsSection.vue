@@ -33,9 +33,6 @@ const topProducts = computed<Array<IProduct>>(() => {
 
 <style scoped>
 .top-products_wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin-top: var(--mt);
   padding: var(--px-section-lg);
 }
@@ -46,7 +43,7 @@ const topProducts = computed<Array<IProduct>>(() => {
 
 .cards-list {
   display: grid;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 3rem;
 }
 
