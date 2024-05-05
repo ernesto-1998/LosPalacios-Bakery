@@ -1,7 +1,7 @@
 <template>
   <div class="card-container">
     <div class="img-wrapper">
-      <img :src="props.product.image" alt="" />
+      <img class="image" :src="props.product.image" alt="" />
     </div>
     <div class="card-body">
       <span>{{ props.product.name }}</span>
@@ -46,8 +46,13 @@ const props = defineProps<{ product: IProduct }>()
 }
 
 .img-wrapper {
-  max-height: 250px;
+  height: 250px;
   overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
 }
 
 .card-body {

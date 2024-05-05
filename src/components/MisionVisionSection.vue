@@ -45,13 +45,13 @@ const VISION_MISION = {
 <style scoped>
 .mision-vision_wrapper {
   margin-top: var(--mt);
-  padding: 0 5rem;
+  padding: var(--px-section-lg);
 }
 
 .mision-vision_body {
   display: grid;
   margin-top: var(--mt-section-body);
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 2rem;
 }
 
@@ -63,7 +63,7 @@ const VISION_MISION = {
   gap: 2rem;
 }
 
-@media (width > 640px) {
+@media (640px < width < 1024px) {
   .mision-vision_wrapper {
     padding: var(--px-section-md);
   }

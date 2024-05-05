@@ -45,10 +45,10 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 0.5rem 0;
+  padding: 0.3rem 0;
   text-align: center;
   background-color: var(--third-color);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 
 .title-wrapper > span {

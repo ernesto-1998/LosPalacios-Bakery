@@ -1,14 +1,10 @@
 <template>
   <h2 class="subtitle">{{ props.title }}</h2>
-  <!-- :style="{ fontSize: props.fontSize }" -->
 </template>
 
 <script setup lang="ts">
-// type FontUnitType = `${string}rem` | `${string}px` | `${string}em`
-
 interface IProps {
   title: string
-  // fontSize: FontUnitType
 }
 
 const props = defineProps<IProps>()

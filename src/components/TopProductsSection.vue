@@ -46,7 +46,7 @@ const topProducts = computed<Array<IProduct>>(() => {
 
 .cards-list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 3rem;
 }
 
@@ -57,7 +57,7 @@ const topProducts = computed<Array<IProduct>>(() => {
   margin-top: 2.2rem;
 }
 
-@media (width > 640px) {
+@media (640px > width < 1024px) {
   .top-products_wrapper {
     padding: var(--px-section-md);
   }
