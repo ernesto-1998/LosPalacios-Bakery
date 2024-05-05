@@ -42,9 +42,6 @@ header {
   display: flex;
   align-items: center;
   padding: 0.5rem 0.8rem;
-  background-color: var(--card-color);
-  border-bottom-left-radius: var(--main-border-radius);
-  border-bottom-right-radius: var(--main-border-radius);
   font-family: var(--logo-font-family);
   font-weight: 400;
   font-size: 30px;
@@ -91,7 +88,7 @@ header {
     left: 0;
     width: 0;
     height: 0.2rem;
-    background-color: var(--extra-color);
+    background-color: var(--card-color);
     transition: width 0.3s ease;
   }
 

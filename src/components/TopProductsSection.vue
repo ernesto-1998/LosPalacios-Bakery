@@ -8,7 +8,7 @@
         </li>
       </ul>
       <div class="button-wrapper">
-        <BaseButton :style="'btnSecond'" :title="'Productos'" />
+        <BaseButton :style="'btnAction'" :title="'Productos'" />
       </div>
     </div>
   </section>

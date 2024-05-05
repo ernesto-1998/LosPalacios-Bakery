@@ -12,7 +12,7 @@
             v-for="(intem, index) in Array.from({ length: props.product.score })"
             :key="index"
           >
-            <BaseIcon :size="'24'" :icon-name="'star'" />
+            <BaseIcon :size="'30'" :icon-name="'star'" />
           </li>
         </ul>
         <span>${{ props.product.price }}</span>
@@ -56,7 +56,7 @@ const props = defineProps<{ product: IProduct }>()
 }
 
 .card-body {
-  background-color: var(--third-color);
+  background-color: var(--card-color);
   padding: 0.3rem 0.7rem;
 }
 
@@ -76,7 +76,7 @@ span {
 }
 
 .score-price_wrapper > span {
-  font-family: var(--text-font-family);
+  font-family: var(--logo-font-family);
   font-size: 2rem;
 }
 

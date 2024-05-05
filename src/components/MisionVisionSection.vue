@@ -4,7 +4,7 @@
     <div class="mision-vision_body">
       <div class="icon-button_wrapper">
         <BaseIcon :icon-name="'hand'" :size="250" />
-        <BaseButton :style="'btnSecond'" :title="BUTTON_TITLE" />
+        <BaseButton :style="'btnAction'" :title="BUTTON_TITLE" />
       </div>
       <TitleParagraph
         :paragraph="VISION_MISION.VISION.paragraph"

@@ -16,7 +16,7 @@ const props = defineProps<IProps>()
   font-family: var(--text-font-family);
   font-weight: 800;
   font-size: var(--base-subtitle-size-lg);
-  color: var(--card-color);
+  color: var(--main-color);
   text-align: center;
 }
 

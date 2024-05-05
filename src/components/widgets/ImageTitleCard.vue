@@ -47,8 +47,7 @@ img {
   left: 0;
   padding: 0.3rem 0;
   text-align: center;
-  background-color: var(--third-color);
-  /* backdrop-filter: blur(10px); */
+  background-color: var(--card-color);
 }
 
 .title-wrapper > span {

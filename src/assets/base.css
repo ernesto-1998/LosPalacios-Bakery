@@ -3,7 +3,8 @@
 :root {
   /* https://colorhunt.co/palette/6b240c994d1ce48f45f5cca0 */
   --main-color: rgb(107, 36, 12);
-  --card-color: rgb(153, 77, 28);
+  /* --card-color: rgb(153, 77, 28); */
+  --card-color: rgb(255, 113, 14);
   --third-color: rgb(228, 143, 69);
   --extra-color: rgb(245, 204, 160);
   --background-color: rgb(255, 234, 211);
