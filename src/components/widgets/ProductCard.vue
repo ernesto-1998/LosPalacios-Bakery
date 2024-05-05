@@ -37,6 +37,7 @@ const props = defineProps<{ product: IProduct }>()
   position: relative;
   font-family: var(--text-font-family);
   background-color: var(--third-color);
+  border-radius: var(--main-border-radius);
   transition: 0.3s ease-in-out;
 }
 
@@ -47,6 +48,8 @@ const props = defineProps<{ product: IProduct }>()
 
 .img-wrapper {
   height: 250px;
+  border-top-left-radius: var(--main-border-radius);
+  border-top-right-radius: var(--main-border-radius);
   overflow: hidden;
 }
 
@@ -57,6 +60,8 @@ const props = defineProps<{ product: IProduct }>()
 
 .card-body {
   background-color: var(--card-color);
+  border-bottom-left-radius: var(--main-border-radius);
+  border-bottom-right-radius: var(--main-border-radius);
   padding: 0.3rem 0.7rem;
 }
 
@@ -93,6 +98,7 @@ span {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 900;
   font-family: var(--logo-font-family);
   font-size: 1.4rem;
   background-color: var(--main-color);
