@@ -55,6 +55,7 @@ const TITLE = 'Haz tu pedido'
 
 .make-order_title {
   font-family: var(--title-font-family);
+  font-weight: 700;
   font-size: 2.7rem;
   text-align: center;
 }
