@@ -26,7 +26,7 @@ const BUTTON_KEYS: Record<string, string> = {
   background-image: url(/home/doughnuts1920.jpg);
   background-position: center;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 700px 1fr;
   height: 480px;
   padding: 1rem 2rem;
   overflow-y: auto;
